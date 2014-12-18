@@ -1,0 +1,554 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-group-item",
+				"list-group-item"
+			],
+			[
+				"Tou",
+				"TournamentController"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public/bower.json",
+			"settings":
+			{
+				"buffer_size": 481,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 78.0,
+		"selected_items":
+		[
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Controlin",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"save",
+				"Project: Save As"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 129.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jonnerz/applications/scubawhere/public_html/dashboard/css/login-register.css",
+		"/C/Users/Jonnerz/applications/scubawhere/public_html/dashboard/login/index.php",
+		"/C/Users/Jonnerz/applications/scubawhere/public_html/dashboard/js/Controllers/Package.js",
+		"/C/Users/Jonnerz/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Jonnerz/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/boats/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/trips/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/js/Controllers/Booking.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/e46e28f5-3191-41da-94d0-8d03789d33fe.dmp",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/css/universal-styles.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/css/style.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/calendar/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/calendar/js/script.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/activate-trip/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/tickets/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/packages/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/accommodations/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/locations/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/common/header/header.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/css/select2.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/register/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/login/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/app/views/status/status.blade.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/app/views/status/template.blade.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/footer/footer.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/js/jquery.tagsinput.min.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/login/css/styles.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/dashboard/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/js/Controllers/Accommodation.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/script.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/register/css/styles.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/common/header/header.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/dashboard - Copy/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/common/css/bootstrap.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/header/header.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/css/style.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/common/css/universal-styles.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/img/scubawhere_logo.svg",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/bootstrap/css/bootstrap-theme.css.map",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/bootstrap/css/bootstrap-theme.min.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/verify/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/verify/index.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/common/css/jquery.reveal.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/js/Controllers/Customer.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/find-booking/js/script.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/js/main.js",
+		"/C/Users/Jonnerz/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Jonnerz/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Jonnerz/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/frontend.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking3/index.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/backup.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/bootstrap/start.php",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/highlight.pack.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/jquery.cookie.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/jquery.fancybox.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/jquery.min.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/tabs backup",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/tabs.js",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/css/jquery.fancybox.css",
+		"/U/Dropbox/Swiftping/applications/scubawhere/public_html/dashboard/tabs/add-booking/js/calander.js",
+		"/U/Dropbox/Website/metallin/shop/system/library/customer.php",
+		"/U/Dropbox/Website/metallin/shop/vqmod/xml/smartsearch.xml",
+		"/C/wamp/apps/phpmyadmin-4.2.11/libraries/config.default.php",
+		"/C/wamp/apps/phpmyadmin4.0.4/config.inc.php",
+		"/C/wamp/apps/phpmyadmin-4.2.11/setup/frames/config.inc.php",
+		"/T/Dropbox/Swiftping/applications/scubawhere/error.text",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/views/layout/layout.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/views/hello.blade.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/config/packages/slushie/laravel-assetic/config.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/composer.json",
+		"/T/Dropbox/Swiftping/applications/uwevgs/public/css/uwevgs.css",
+		"/T/Dropbox/Swiftping/applications/uwevgs/vendor/kriswallsmith/assetic/src/Assetic/Filter/CssMinFilter.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/libraries/cssmin/CssMin.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/public/index.html",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/libraries/CssMin/CssMin.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/libraries/cssmin/cssmin.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/public/css/normalize.css",
+		"/T/Dropbox/Swiftping/applications/uwevgs/public/css/main.css",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/config/local/app.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/config/local/database.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/config/app.php",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/assets/css/main.css",
+		"/T/Dropbox/Swiftping/applications/uwevgs/app/assets/css/normalize.css",
+		"/C/wamp/www/metallin/vqmod/vqcache/vq2-catalog_controller_product_product.php",
+		"/C/wamp/www/metallin/vqmod/xml/ajax_stock.xml_",
+		"/C/wamp/www/metallin/vqmod/xml/custom_product_tab_EVISU.xml",
+		"/C/wamp/www/metallin/vqmod/mods.cache",
+		"/C/wamp/www/metallin/admin/view/template/catalog/product_form.tpl",
+		"/C/wamp/www/metallin/admin/config.php",
+		"/C/wamp/www/metallin/config.php",
+		"/C/wamp/www/metallin/catalog/view/theme/evisu/stylesheet/stylesheet.css",
+		"/C/wamp/www/metallin/admin/controller/catalog/option.php",
+		"/C/wamp/www/metallin/catalog/view/theme/default/template/product/product.tpl",
+		"/C/wamp/www/metallin/admin/language/english/catalog/option.php",
+		"/C/Users/Jonnerz/AppData/Local/Temp/7zOF091.tmp/config.php",
+		"/C/Users/Jonnerz/AppData/Local/Temp/7zODC65.tmp/config.php",
+		"/C/wamp/www/metallin/system/cache/cache.ac_cms_article.1.0.0.8e1a62569a9dc470a87b5303cfae20e5.1411422938",
+		"/C/Users/Jonnerz/AppData/Local/Temp/7zO2170.tmp/config.php",
+		"/C/Users/Jonnerz/AppData/Local/Temp/7zO1002.tmp/config.php",
+		"/C/wamp/www/gracechurch/js/jquery.backgroundSize.js",
+		"/C/Users/Jonnerz/AppData/Local/Temp/fz3temp-2/style.css",
+		"/C/Users/Jonnerz/AppData/Local/Temp/fz3temp-3/style.css",
+		"/C/wamp/www/gracechurch/css/style.css",
+		"/T/Dropbox/Swiftping/applications/tacsi/mobile/www/js/main.js",
+		"/T/Dropbox/Swiftping/applications/tacsi/frontend/js/app.js",
+		"/T/Dropbox/Swiftping/applications/tacsi/frontend/js/services.js",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/database/seeds/RolesTableSeeder.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/database/seeds/DatabaseSeeder.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/filters.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/models/User.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/controllers/UserController.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/database/seeds/UserRolesTableSeeder.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/models/Role.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/database/migrations/2014_08_25_104528_create_userRoles_table.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/database/migrations/2014_08_25_104357_create_roles_table.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/frontend/css/main.css",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/config/app.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/frontend/css/fonts.css",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/database/migrations/2014_08_24_181541_create_users_table.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/config/database.php",
+		"/T/Dropbox/Swiftping/applications/tacsi/app/config/mail.php",
+		"/C/Users/Jonnerz/AppData/Local/Temp/7zED1B9.tmp/stylesheet.css",
+		"/T/Dropbox/Swiftping/applications/tacsi/frontend/css/bootstrap-theme.css",
+		"/C/Users/Jonnerz/AppData/Local/Temp/7zEEFEA.tmp/stylesheet.css",
+		"/C/wamp/www/chrono/contact.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"U:\\Dropbox\\Swiftping\\applications\\scubawhere,",
+			"U:\\Dropbox\\Swiftping\\applications\\scubawhere\\public_html,",
+			"C:\\wamp\\www\\metallin\\,",
+			"C:\\wamp\\www\\metallin\\shop,",
+			"U:\\Dropbox\\Website\\metallin\\shop,",
+			"U:\\Dropbox\\Website\\metallin\\shop",
+			"",
+			"*.php",
+			"",
+			"*.php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ticket",
+			"Ticket",
+			"ticket",
+			"Ticket",
+			"ticket",
+			"Ticket",
+			"ticket",
+			"Ticket",
+			"#booking-details",
+			"No tick",
+			"ticket",
+			"booking-details",
+			"bookingDetails",
+			"bookingdetails",
+			"bookingDetails",
+			"bookingdetails",
+			"bookingDetailsTemplate",
+			"booking-details-template",
+			"package",
+			"bookingdetail",
+			"sessionsTemplate",
+			"redrawSessionsList",
+			"compileSessionsList",
+			"sessionTicketsTemplate",
+			"sessionPackagesTemplate",
+			"span",
+			"div",
+			"selectedTickets",
+			"selectedPackages",
+			"curren",
+			"loadedPackages",
+			"tickets",
+			"packagesTemplate",
+			"tickets",
+			"Tickets",
+			"tickets",
+			"Tickets",
+			"Ticket",
+			"tickets",
+			"Tickets",
+			"currentStep",
+			"var booking",
+			".bs.ta",
+			"ow.bs.ta",
+			"'show.bs.ta",
+			"'show.bs",
+			"n('show.bs.",
+			"\"]').on('show.b",
+			".on('show.bs.t",
+			"n('show.bs.t",
+			"show.bs.ta",
+			"ow.bs.tab'",
+			"currentStep",
+			"accommodationCustomersTemplate",
+			"h4",
+			"/p",
+			"class=\"lead",
+			"class=\"lead\"",
+			"h3",
+			"date",
+			"h3",
+			"h2",
+			"h2>",
+			"h2",
+			"box50 > label",
+			"<strong>Set base prices",
+			"h3>",
+			"label",
+			"typeahead.js",
+			"#wrapper",
+			"id=\"wrapper\"",
+			".entity-list li",
+			"url('select2-spinner.gif')",
+			"url('select2.png')",
+			".png",
+			"universal-styles",
+			"universal",
+			"fullcalendar.css",
+			"jquery.tagsinput.min.js",
+			"header/header.php",
+			"Chart.min.js",
+			"css/style.css",
+			"dashboard\\css\\style.css",
+			"dashboard/css/style.css",
+			"dashboard/common",
+			"common/jquery/",
+			"jQuery-Tags-Input-master",
+			"rAF.js",
+			"jquery.tagsinput.min.js",
+			"jquery-ui.custom.min.js",
+			"/js/",
+			"js/jquery",
+			"common/js",
+			"js/jquery",
+			"/dashboard",
+			"login-register.css",
+			"font-awesome.min.css",
+			"ScubaWhere_Logo",
+			"ScubaWhere_logo.svg",
+			"_logo",
+			"dc-hdr-logo.png",
+			"scubawhere_logo",
+			"/",
+			"\\",
+			"z",
+			"select2",
+			"bootstrap-datetimepicker.css",
+			"content:",
+			"font",
+			"font-awesome",
+			"font-awesome.css",
+			"bootstrap.css",
+			"bootstrap.min.css",
+			"bootstrap",
+			"verify",
+			"\\verify",
+			"margin-bottom: ",
+			"header.php",
+			"footer.css",
+			"ga.php",
+			"bootstrap3-typeahead",
+			"bootstrap3-typeahead.js",
+			"font-awesome",
+			"modal-gloss.png",
+			" hidden-sm",
+			"hidden-xs",
+			"step-description",
+			"date"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"common/js/jquery/",
+			"(",
+			"/*!",
+			"scubawhere_logo",
+			"Century Gothic",
+			"chrono",
+			"col-sm-",
+			"h3",
+			"result",
+			"$match->",
+			"$match",
+			"td>",
+			"email",
+			"last_",
+			"$player",
+			"fixture",
+			"$fixture",
+			"ringer",
+			"width:100%;",
+			"width:160px;",
+			"width",
+			"<div class=\"input-group\" style=\"min-width:110px;\">",
+			"\"form-control\"",
+			"form-control\"",
+			"'round', '=', $round",
+			";",
+			"$",
+			"$match->match_id",
+			"",
+			"</div>",
+			"<div class=\"sevencolumns col-sm-1\">",
+			"thumbnail-mb",
+			"league",
+			"$matchplayer->",
+			"$matchplayer",
+			"$fixture",
+			"$result",
+			"#252525",
+			"#929292",
+			"#E5E5E5",
+			"green",
+			"jack",
+			"\"].\"",
+			" \".$_POST",
+			":$_",
+			"\"].\"",
+			": \".$_POST"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/bower.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "billing.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp\\www\\swiftping.co.uk\\swiftping.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 350.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

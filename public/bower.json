@@ -1,0 +1,26 @@
+{
+  "name": "billing",
+  "version": "0.0.1",
+  "authors": [
+    "Jonathan Lambert <jonathan@swiftping.co.uk>"
+  ],
+  "description": "Swiftping billing system",
+  "main": "index.html",
+  "keywords": [
+    "billing"
+  ],
+  "license": "Private",
+  "homepage": "www.swiftping.co.uk",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.1",
+    "bootswatch": "~3.3.1+2"
+  }
+}
