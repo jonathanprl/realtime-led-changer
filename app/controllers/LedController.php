@@ -1,6 +1,6 @@
 <?php
 
-class PiController extends \BaseController {
+class LedController extends \BaseController {
 
     private $output;
     private $status;
@@ -20,7 +20,7 @@ class PiController extends \BaseController {
         return Response::json(array('message' => $this->output), 200);
     }
 
-    public function postLed() 
+    public function postUpdate() 
     {
         switch(Input::get('action')) {
 
