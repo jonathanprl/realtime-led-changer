@@ -9,3 +9,14 @@
 	left: 50%;
 	margin-left: -150px;
 }
+
+.led {
+
+	&[data-colour*="yellow"][data-status*="1"] {
+		color: @brand-warning;
+	}
+
+	&[data-colour*="red"][data-status*="1"] {
+		color: @brand-danger;
+	}
+}
