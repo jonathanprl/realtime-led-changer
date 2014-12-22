@@ -43,6 +43,14 @@ $(".btn-led").click(function(event) {
 		$(document).alert("success", "<strong>Success!</strong> The "+params.colour+" LED is now "+params.action+".");
 		btn.html(btnText).removeClass('disabled');
 
+		var led = $('.led[data-colour='+params.colour+']');
+
+		if(params.action == "on") {
+			led.addClass(led.data('class'));
+		}else{
+			led.removeClass(led.data('class'));
+		}
+		
 	}, function(error) {
 
 		$(document).alert("danger", "The LED did not change...");
