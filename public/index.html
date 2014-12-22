@@ -4,8 +4,12 @@
 		<meta charset="utf-8">
 		<title>LED Test</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<link rel="stylesheet" href="css/main.css" media="screen">
 		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css" media="screen">
+
+		<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -33,20 +37,20 @@
 				<p>Use the buttons to control the LED lights that are in Jonathan's room.</p>
 				<p>Click the buttons below to control the <span class="label label-danger">Red LED</span>.</p>
 				<p>
-					<button class="btn btn-success btn-led" data-action="on" data-colour="red">LED On</button>
-					<button class="btn btn-danger btn-led" data-action="off" data-colour="red">LED Off</button>
+					<button class="btn btn-success btn-led" data-action="true" data-colour="red">LED On</button>
+					<button class="btn btn-danger btn-led" data-action="false" data-colour="red">LED Off</button>
 				</p>
 				<p>Click the buttons below to control the <span class="label label-warning">Yellow LED</span>.</p>
 				<p>
-					<button class="btn btn-success btn-led" data-action="on" data-colour="yellow">LED On</button>
-					<button class="btn btn-danger btn-led" data-action="off" data-colour="yellow">LED Off</button>
+					<button class="btn btn-success btn-led" data-action="true" data-colour="yellow">LED On</button>
+					<button class="btn btn-danger btn-led" data-action="false" data-colour="yellow">LED Off</button>
 				</p>
 				<div class="row">
 					<div class="col-md-2 col-xs-6 col-md-offset-4 col-xs-offset-0">
-						<p class="text-center led" data-colour="red" data-class="text-danger"><i class="fa fa-lightbulb-o fa-spin fa-4x"></i></p>
+						<p class="text-center led" data-colour="red"><i class="fa fa-lightbulb-o fa-spin fa-4x"></i></p>
 					</div>
 					<div class="col-md-2 col-xs-6">
-						<p class="text-center led" data-colour="yellow" data-class="text-warning"><i class="fa fa-lightbulb-o fa-spin fa-4x"></i></p>
+						<p class="text-center led" data-colour="yellow"><i class="fa fa-lightbulb-o fa-spin fa-4x"></i></p>
 					</div>
 				</p>
 			</div>
