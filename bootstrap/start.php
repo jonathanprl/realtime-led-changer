@@ -27,6 +27,7 @@ $app = new Illuminate\Foundation\Application;
 $env = $app->detectEnvironment(array(
 
 	'local' => array('Jonnerz-PC'),
+	'production' => array('pi.swif.co'),
 
 ));
 

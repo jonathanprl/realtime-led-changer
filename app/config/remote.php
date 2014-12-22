@@ -38,9 +38,9 @@ return array(
 		),
 
 		'pi' => array(
-			'host'      => '86.173.212.122',
-			'username'  => 'pi',
-			'password'  => 'cheeseman123',
+			'host'      => '0.0.0.0', //Raspberry Pi IP address
+			'username'  => 'pi', //Raspberry Pi Username
+			'password'  => 'pi', //Raspberry Pi Password
 			'key'       => '',
 			'keyphrase' => '',
 			'root'      => '/home/pi',
