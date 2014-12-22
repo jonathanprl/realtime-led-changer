@@ -38,7 +38,7 @@ return array(
 		),
 
 		'pi' => array(
-			'host'      => '86.157.89.54',
+			'host'      => '86.173.212.122',
 			'username'  => 'pi',
 			'password'  => 'cheeseman123',
 			'key'       => '',
