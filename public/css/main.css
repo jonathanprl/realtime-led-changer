@@ -6676,9 +6676,9 @@ a.list-group-item-danger.active:focus {
   left: 50%;
   margin-left: -150px;
 }
-.led[data-colour*="yellow"][data-status*="true"] {
+.led[data-colour*="yellow"][data-status*="1"] {
   color: #ff851b;
 }
-.led[data-colour*="red"][data-status*="true"] {
+.led[data-colour*="red"][data-status*="1"] {
   color: #ff4136;
 }
