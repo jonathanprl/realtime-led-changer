@@ -11,4 +11,4 @@
 |
 */
 
-Route::controller('pi', 'PiController');
+Route::controller('led', 'LedController');
