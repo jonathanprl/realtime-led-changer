@@ -15,12 +15,11 @@ Rasp.prototype.ledUpdate = function(params, successFn, errorFn) {
 	
 };
 
-Rasp.prototype.ledStatus = function(params, successFn, errorFn) {
+Rasp.prototype.ledStatus = function(successFn, errorFn) {
 
 	$.ajax({
 		type: "GET",
 		url: "http://api.pi.swif.co/led/status",
-		data: params,
 		success: successFn,
 		error: errorFn,
 		dataType: "json"
