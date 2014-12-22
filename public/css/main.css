@@ -6672,7 +6672,7 @@ a.list-group-item-danger.active:focus {
 }
 .alert-wrapper {
   position: absolute;
-  width: 400px;
+  width: 300px;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -150px;
 }
