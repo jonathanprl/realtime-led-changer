@@ -30,7 +30,7 @@ class LedController extends \BaseController {
             ),
             function($line)
             {
-                $this->output = $line;
+                $this->output = preg_replace("/\r|\n/", "", $line);
             }
         );
 
@@ -89,7 +89,7 @@ class LedController extends \BaseController {
             ),
             function($line)
             {
-                $this->status = $line;
+                $this->status = preg_replace("/\r|\n/", "", $line);
             }
         );
 
