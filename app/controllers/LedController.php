@@ -5,7 +5,6 @@ class LedController extends \BaseController {
     private $output;
     private $status;
     private $pins = array("yellow" => 0, "red" => 1);
-    private $actions = array("true" => 1, "false" => 0);
 
 
     public function getStatus() 
@@ -30,9 +29,9 @@ class LedController extends \BaseController {
     public function postUpdate() 
     {
 
-        if(isset($this->actions[Input::get('action')]))
+        if(Input::get('action') == "1" || Input::get('action') == "0")
         {
-            $status = $this->actions[Input::get('action')];
+            $status = Input::get('action');
         }
         else
         {
