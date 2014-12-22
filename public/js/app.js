@@ -1,26 +1,30 @@
 //Access the raspberry pi service
 var rasp = new Rasp();
 
+//Access firebase for real-time LED status
+var firebase = new Firebase('https://pi-swif.firebaseio.com/');
+
 $(document).ready(function() {
 
-	var params = {};
+	rasp.ledStatus(function(data) {
 
-	$('.led').each(function(i,v) {
-		params.colour = $(v).data('colour');
+		firebase.set({
+				"led": data.status
+			});
 
-		rasp.ledStatus(params, function(data) {
+	}, function(error) {
 
-			if(data.status == 1) {
-				$(v).addClass($(v).data('class'));
-			}else{
-				$(v).removeClass($(v).data('class'));
-			}
+		$(document).alert('danger', 'There was an error...');
 
-			$(v).children('i').removeClass('fa-spin');
+	});
 
-		}, function(error) {
+	//Get real time status of LED's and apply to LED icons
+	firebase.child("led").on("value", function(snapshot) {
 
-			$(document).alert("danger", "There was an error...");
+		$.each(snapshot.val(), function(k,v) {
+
+			$('.led[data-colour=' + k + ']').attr('data-status', v);
+			$('.led').children('i').removeClass('fa-spin');
 
 		});
 
@@ -40,16 +44,14 @@ $(".btn-led").click(function(event) {
 
 	rasp.ledUpdate(params, function() {
 
-		$(document).alert("success", "<strong>Success!</strong> The "+params.colour+" LED is now "+params.action+".");
+		var fbLed = new Firebase('https://pi-swif.firebaseio.com/led');
+		var status = {};
+		
+		$(document).alert('success', '<strong>Success!</strong> The ' + params.colour + ' LED has changed.');
 		btn.html(btnText).removeClass('disabled');
 
-		var led = $('.led[data-colour='+params.colour+']');
-
-		if(params.action == "on") {
-			led.addClass(led.data('class'));
-		}else{
-			led.removeClass(led.data('class'));
-		}
+		status[params.colour] = params.action;
+		fbLed.update(status);
 		
 	}, function(error) {
 
