@@ -6,7 +6,7 @@ Rasp.prototype.ledUpdate = function(params, successFn, errorFn) {
 
 	$.ajax({
 		type: "POST",
-		url: "http://api.rasp.swif/led/update",
+		url: "http://api.pi.swif.co/led/update",
 		data: params,
 		success: successFn,
 		error: errorFn,
@@ -18,8 +18,8 @@ Rasp.prototype.ledUpdate = function(params, successFn, errorFn) {
 Rasp.prototype.ledStatus = function(params, successFn, errorFn) {
 
 	$.ajax({
-		type: "POST",
-		url: "http://api.rasp.swif/led/status",
+		type: "GET",
+		url: "http://api.pi.swif.co/led/status",
 		data: params,
 		success: successFn,
 		error: errorFn,

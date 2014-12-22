@@ -3,13 +3,26 @@ var rasp = new Rasp();
 
 $(document).ready(function() {
 
-	rasp.ledStatus(params, function() {
+	var params = {};
 
-		btn.html(btnText).removeClass('disabled');
+	$('.led').each(function(i,v) {
+		params.colour = $(v).data('colour');
 
-	}, function(error) {
+		rasp.ledStatus(params, function(data) {
 
-		btn.html(btnText).removeClass('disabled');
+			if(data.status == 1) {
+				$(v).addClass($(v).data('class'));
+			}else{
+				$(v).removeClass($(v).data('class'));
+			}
+
+			$(v).children('i').removeClass('fa-spin');
+
+		}, function(error) {
+
+			$(document).alert("danger", "There was an error...");
+
+		});
 
 	});
 

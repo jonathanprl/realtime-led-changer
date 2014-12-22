@@ -5,11 +5,28 @@ class LedController extends \BaseController {
     private $output;
     private $status;
 
+
     public function getStatus() 
     {
+        switch(Input::get('colour')) {
+
+            case "red":
+                $pin = 1;
+                break;
+
+            case "yellow":
+                $pin = 0;
+                break;
+
+            default:
+                return Response::json(array('message' => 'Invalid colour.'), 406);
+                break;
+
+        }
+
         SSH::into('pi')->run(
             array(
-                'gpio -v'
+                'gpio read '.$pin
             ),
             function($line)
             {
@@ -17,8 +34,9 @@ class LedController extends \BaseController {
             }
         );
 
-        return Response::json(array('message' => $this->output), 200);
+        return Response::json(array('status' => $this->output), 200);
     }
+
 
     public function postUpdate() 
     {
