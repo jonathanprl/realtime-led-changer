@@ -14,6 +14,7 @@
 App::before(function($request)
 {
 	header('Access-Control-Allow-Origin: http://rasp.swif');
+	header('Access-Control-Allow-Origin: http://pi.swif.co');
 });
 
 
