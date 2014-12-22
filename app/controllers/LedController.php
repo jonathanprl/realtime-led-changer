@@ -28,37 +28,25 @@ class LedController extends \BaseController {
 
     public function postUpdate() 
     {
-        switch(Input::get('action')) {
 
-            case "on":
-                $status = 1;
-                break;
-
-            case "off":
-                $status = 0;
-                break;
-
-            default:
-                return Response::json(array('message' => 'Invalid action.'), 406);
-                break;
-
+        if(Input::get('action') == "true" || Input::get('action') == "false")
+        {
+            $status = (bool) Input::get('action');
+        }
+        else
+        {
+            return Response::json(array('message' => 'Invalid action.'), 406);
         }
 
-        switch(Input::get('colour')) {
-
-            case "red":
-                $pin = 1;
-                break;
-
-            case "yellow":
-                $pin = 0;
-                break;
-
-            default:
-                return Response::json(array('message' => 'Invalid colour.'), 406);
-                break;
-
+        if(isset($this->pins[Input::get('colour')]))
+        {
+            $pin = $this->pins[Input::get('colour')];
         }
+        else
+        {
+            return Response::json(array('message' => 'Invalid colour.'), 406);
+        }
+
 
         SSH::into('pi')->run(
             array(
@@ -71,23 +59,7 @@ class LedController extends \BaseController {
             }
         );
 
-        SSH::into('pi')->run(
-            array(
-                'gpio read '.$pin
-            ),
-            function($line)
-            {
-                $this->status = preg_replace("/\r|\n/", "", $line);
-            }
-        );
-
-        if($this->status != $status)
-            return Response::json(array('message' => 'LED did not change.'), 500);
-
-        $statusArr = array();
-        $statusArr["led"][Input::get('colour')] = $status;
-
-        return Response::json(array('message' => 'LED changed successfully.', 'status' => $statusArr), 200);
+        return Response::json(array('message' => 'LED changed successfully.'), 200);
     }
 
 }
