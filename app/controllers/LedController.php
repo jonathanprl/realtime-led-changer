@@ -4,35 +4,23 @@ class LedController extends \BaseController {
 
     private $output;
     private $status;
+    private $pins = array("yellow" => 0, "red" => 1);
 
 
     public function getStatus() 
     {
-        switch(Input::get('colour')) {
-
-            case "red":
-                $pin = 1;
-                break;
-
-            case "yellow":
-                $pin = 0;
-                break;
-
-            default:
-                return Response::json(array('message' => 'Invalid colour.'), 406);
-                break;
-
+        foreach($this->pins as $colour => $pin)
+        {
+            SSH::into('pi')->run(
+                array(
+                    'gpio read '.$pin
+                ),
+                function($line) use ($colour)
+                {
+                    $this->output[$colour] = (int) preg_replace("/\r|\n/", "", $line);
+                }
+            );     
         }
-
-        SSH::into('pi')->run(
-            array(
-                'gpio read '.$pin
-            ),
-            function($line)
-            {
-                $this->output = preg_replace("/\r|\n/", "", $line);
-            }
-        );
 
         return Response::json(array('status' => $this->output), 200);
     }
@@ -96,7 +84,10 @@ class LedController extends \BaseController {
         if($this->status != $status)
             return Response::json(array('message' => 'LED did not change.'), 500);
 
-        return Response::json(array('message' => 'LED changed successfully.'), 200);
+        $statusArr = array();
+        $statusArr["led"][Input::get('colour')] = $status;
+
+        return Response::json(array('message' => 'LED changed successfully.', 'status' => $statusArr), 200);
     }
 
 }
