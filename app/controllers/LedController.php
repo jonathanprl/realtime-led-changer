@@ -5,6 +5,7 @@ class LedController extends \BaseController {
     private $output;
     private $status;
     private $pins = array("yellow" => 0, "red" => 1);
+    private $actions = array("true" => 1, "false" => 0);
 
 
     public function getStatus() 
@@ -29,9 +30,9 @@ class LedController extends \BaseController {
     public function postUpdate() 
     {
 
-        if(Input::get('action') == "true" || Input::get('action') == "false")
+        if(isset($this->actions[Input::get('action')]))
         {
-            $status = (bool) Input::get('action');
+            $status = $this->actions[Input::get('action')];
         }
         else
         {
@@ -46,7 +47,6 @@ class LedController extends \BaseController {
         {
             return Response::json(array('message' => 'Invalid colour.'), 406);
         }
-
 
         SSH::into('pi')->run(
             array(
