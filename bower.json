@@ -1,10 +1,10 @@
 {
-  "name": "billing",
+  "name": "raspberrypi",
   "version": "0.0.1",
   "authors": [
     "Jonathan Lambert <jonathan@swiftping.co.uk>"
   ],
-  "description": "Swiftping billing system",
+  "description": "Raspberry Pi",
   "main": "index.html",
   "keywords": [
     "billing"
@@ -22,6 +22,7 @@
   "devDependencies": {
     "bootstrap": "~3.3.1",
     "bootswatch": "~3.3.1",
-    "ember": "~1.9.0"
+    "bootstrap-alerts": "jonnerz/bootstrap-alerts",
+    "fontawesome": "~4.2.0"
   }
 }

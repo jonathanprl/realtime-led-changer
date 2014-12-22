@@ -1,22 +1,57 @@
 <!doctype html>
-<html lang="en" data-framework="emberjs">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>ember.js • TodoMVC</title>
-		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<title>LED Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css" media="screen">
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css" media="screen">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+	      <script src="../bower_components/respond/dest/respond.min.js"></script>
+	      <![endif]-->
 	</head>
 	<body>
+		<header>
+			<div class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">LED Test</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>LED Test</h1>
+				<p>Click the buttons below to control the <span class="label label-danger">Red LED</span>.</p>
+				<p>
+					<button class="btn btn-success btn-led" data-action="on" data-colour="red">LED On</button>
+					<button class="btn btn-danger btn-led" data-action="off" data-colour="red">LED Off</button>
+				</p>
+				<p>Click the buttons below to control the <span class="label label-warning">Yellow LED</span>.</p>
+				<p>
+					<button class="btn btn-success btn-led" data-action="on" data-colour="yellow">LED On</button>
+					<button class="btn btn-danger btn-led" data-action="off" data-colour="yellow">LED Off</button>
+				</p>
+			</div>
+		</div>
 
-		<script src="vendor/jquery/dist/jquery.js"></script>
-		<script src="vendor/handlebars/handlebars.js"></script>
-		<script src="vendor/ember/ember.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/router.js"></script>
-		<script src="js/models/todo.js"></script>
-		<script src="js/controllers/todos_controller.js"></script>
-		<script src="js/controllers/todos_list_controller.js"></script>
-		<script src="js/controllers/todo_controller.js"></script>
-		<script src="js/views/todo_input_component.js"></script>
-		<script src="js/helpers/pluralize.js"></script>
+		<!-- jQuery -->
+		<script src="vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="vendor/jquery-ui/jquery-ui.js" type="text/javascript"></script>
+
+		<!-- App -->
+		<script src="js/service.js" type="text/javascript"></script>
+		<script src="js/app.js" type="text/javascript"></script>
+
+		<!-- Plugins -->
+		<script src="vendor/bootstrap-alerts/bootstrap-alerts.min.js" type="text/javascript"></script>
 	</body>
 </html>

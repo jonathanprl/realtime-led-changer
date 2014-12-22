@@ -37,6 +37,15 @@ return array(
 			'root'      => '/var/www',
 		),
 
+		'pi' => array(
+			'host'      => '86.157.89.54',
+			'username'  => 'pi',
+			'password'  => 'cheeseman123',
+			'key'       => '',
+			'keyphrase' => '',
+			'root'      => '/home/pi',
+		),
+
 	),
 
 	/*
